@@ -1,0 +1,36 @@
+body{
+	background: white;
+}
+.article {
+	margin 		: 20px auto;
+	width 		: 8.5in;
+	height 		: 11in;
+	background 	: white;
+	font-family : 'Computer Modern Serif';
+	box-shadow 	: -3px -3px 6px 4px lightgray;
+}
+.article > .document{
+	width 	: 100%;
+	display : inline-block;
+	margin 	: 1in auto;
+}
+.document > *{
+	margin: 0 1in;
+}
+.document > span{
+	margin: 0;
+}
+.document > a{
+	margin: 0;
+}
+.document > .center{
+	text-align: center;
+	/*width: 75%;*/
+	/*margin-left: auto;
+	margin-right: auto;*/
+}
+
+.document > h1{
+	font-weight : bold; 
+	/*font-family : 'Computer Modern Serif '*/
+}
