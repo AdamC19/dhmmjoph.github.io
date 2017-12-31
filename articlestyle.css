@@ -26,21 +26,31 @@ body{
 .document > .left {
 	float 	: left;
 }
+.document > .right {
+	float 	: right;
+}
 .document > span{
 	margin: 0;
 }
 .document > a{
-	margin: 0;
+	margin 				: 0;
+	text-decoration 	: none;
 }
 .document > p{
 	margin-bottom: 0.25in;
 }
-
 .document > h1{
 	font-weight : bold; 
 }
-.document > img{
-	/*width 	: 50%;*/
+.document > .image {
+	/*width 		: 4.5in;*/
+	font-style 	: italic;
+	text-align 	: center;
+}
+.document > .image > img{
+	margin 		: 0;
+	width 		: 100%;
+	border 		: 1px solid lightgray;
 }
 .document > table{
 	border-top 		: 1px solid black;
@@ -53,4 +63,6 @@ body{
 	border-bottom 	: 1px solid black;
 	border-collapse : collapse;
 }
-
+.caption {
+	font-size 	: 0.8em;
+}
