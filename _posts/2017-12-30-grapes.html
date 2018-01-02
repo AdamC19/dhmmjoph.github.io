@@ -12,18 +12,25 @@ imgurl:
 <div class="article">
 
 	<div class="document">
-		<h2 class="center">Testing Grape Mass Distribution for Three Populations of Grapes</h2><br />
+		<h2 class="center">Examining the Predictability of Grape Population Size</h2><br />
 		<p class="center"><em>John Holbrook, Adam Cordingley</em><br /><em>30 December, 2017</em></p>
-		&nbsp;
-		<h3>Abstract</h3>
-		<p>Grapes in grocery stores are packaged, priced, and sold in units of mass, as this is the easiest, most economical, and most sensible way for the grocers to price and partition organic stock. It is also sensible in the majority of cases for consumers to purchase their produce by mass. Were this not the case, we would no doubt see a greater focus in the industry in counting and quantifying numbers of discrete produce units. However, this universal strategy for grape distribution presents a problem in the unique case that one wishes to acquire a precise number of individual grape units. One occaison for doing this is in preparation for the New Year's tradition of eating 12 grapes at midnight on New Year&apos;s Day in accordance with the superstition that the consumer will experience good luck in the coming year. The New-Year&apos;s-party host is tasked with purchasing a precise quanitity of discrete grapes \(N_{grapes} = N_{guests}\cdot 12\). In this study, we posit that it is possible to estimate the size of a popultion of grapes based on the Gross Population Mass (GPM). We examine the feasibility of this estimation and the challenges and risks presented in attempting this in practice.
+		<h3>Contents</h3>
+		<ul>
+			<li><a href="grapes.html#abstract">Abstract</a></li>
+			<li><a href="grapes.html#intro">Introduction</a></li>
+			<li><a href="grapes.html#experiment">Experimental Procedure</a></li>
+			<li><a href="grapes.html#conclusion">Conclusion</a></li>
+			<li><a href="grapes.html#references">References</a></li>
+		</ul>
+		<h3 id="abstract">Abstract</h3>
+		<p>Grapes in grocery stores are packaged, priced, and sold in units of mass, as this is the easiest, most economical, and most sensible way for grocers to price and partition organic stock. It is also sensible in most cases for consumers to purchase their produce by mass. Were this not the case, we would no doubt see a greater focus in the industry in counting and quantifying numbers of discrete produce units. However, this universal strategy for grape distribution presents a problem in the unique case that one wishes to acquire a precise number of individual grape units. One occaison for doing this is in preparation for the New Year's tradition of eating 12 grapes at midnight on New Year&apos;s Day in accordance with the superstition that the consumer will experience good luck in the coming year. The New-Year&apos;s-party host is tasked with purchasing a precise quanitity of discrete grapes \(N_{grapes} = N_{guests}\cdot 12\). In this study, we posit that it is possible to estimate the size of a popultion of grapes based on the Gross Population Mass (GPM). We examine the feasibility of this estimation and the challenges and risks presented in attempting this in practice.
 		&nbsp;</p>
 
-		<h3>Introduction</h3>
+		<h3 id="intro">Introduction</h3>
 		<p>By visual inspection of a random sample of grapes, one can deduce that there is non-insignificant variation in grape size (and hence grape mass) even in a population of grapes of the same variety and from the same source -- even more variation can be observed between grapes of different varieties and sources. This is not usually a problem for the consumer because they are not concerned with precise numbers of grapes but merely a gross quantity. However in the case we presented in the Abstract, circumstances may arise wherein one wants to obtain a precise number of individual grapes.  </p>
 
-		<h3>Experimental Procedure</h3>
-		<p>We obtained our three grape populations from a local Kroger&reg; grocery store. We had in total 7 bags of grapes, each approximately 2 lbs (~0.9 kg), summing to nearly 14 lbs (~6.4 kg). </p>
+		<h3 id="experiment">Experimental Procedure</h3>
+		<p>We obtained our three grape populations from a local Kroger&reg; grocery store. We had in total 7 bags of grapes, each approximately 2 lbs (~0.9 kg), summing to nearly 14 lbs (~6.4 kg). Our tool for massing the grapes was a small digital kitchen scale, accurate to \(\pm 1g\). While the scale's accuracy is not desirable for proper research, it does represent the accuracy we expect the average consumer to be able to acheive.</p>
 		<p>Our goal in this experiment  </p>
 		<h3>Results and Analysis</h3>
 		
@@ -46,6 +53,14 @@ imgurl:
 			<div class="caption"><b>Figure 3</b>:A caption for this figure</div>
 		</div>
 		<br />
+
+		<h4>Distribution Across All Samples</h4>
+		<div class="image center" style="width:4.5in">
+			<img src="grape_data_2017-12-30/grape_graphs/All.png"  />
+			<div class="caption"><b>Figure 4</b>:A caption for this figure</div>
+		</div>
+		<br />
+
 		<h4>Summary of Results</h4>
 		<br />
 		<table class="center"><tbody>
@@ -70,10 +85,23 @@ imgurl:
 		<p class="caption">*Weighted average</p>
 		<br />
 
-		<h3>Conclusion</h3>
+		<table class="center"><tbody>
+			<tr>	<th>Grape Population</th>	<th>Sample Size</th>	<th>Predicted Population Size</th>	<th>Actual Population Size</th>	<th>Error</th>	<th>Error (%)</th>	</tr>
+			<tr>	<td>Agricola Bag 1</td>		<td>30</td>		<td>\( 172 \pm 7 \)</td>	<td>155</td>	<td>17</td>	<td>10.96774</td>	</tr>
+			<tr>	<td>Agricola Bag 2</td>		<td>30</td>		<td>\( 262 \pm 11\)</td>	<td>268</td>	<td>6</td>	<td>2.23881</td>	</tr>
+			<tr>	<td>Frusan</td>				<td>39</td>		<td>\( 137 \pm 6  \)</td>	<td>136</td>	<td>1</td>	<td>0.73529</td>	</tr>
+			<tr>	<td>VBZ</td>				<td>41</td>		<td>\( 167 \pm 3  \)</td>	<td>142</td>	<td>25</td>	<td>17.60563</td>	</tr>
+			<tr>	<td>All</td>				<td>110</td>	<td>\( 459 \pm 15 \)</td>	<td>433</td>	<td>26</td>	<td>6.00462</td>	</tr>
+		</tbody></table>
 
-		<h3>References</h3>
-		<p>The <a href="https://www.checkmyworking.com/cm-web-fonts/">Computer Modern Font</a> used here is courtesy of Christian Lawson-Perfect checkmyworking.com.</p>
+		<h3 id="conclusion">Conclusion</h3>
+
+		<h3 id="references">References</h3>
+		<p class="ref"><a href="https://ohioline.osu.edu/factsheet/HYG-1434-11">Crop Estimation of Grapes</a></p>
+		<p><a href="http://cetulare.ucanr.edu/files/82015.pdf">The Relationship Between Berry Weight, Length, and Width for Five Table Grape Varieties</a></p>
+		<p><a href="https://www.statista.com/statistics/236887/retail-price-of-grapes-in-the-united-states/">Retail price of seedless grapes (Thompson) in the United States from 1995 to 2016 (in U.S. dollars per pound)</a></p>
+		<p class="ref">The <a href="https://www.checkmyworking.com/cm-web-fonts/">Computer Modern Font</a> used here is courtesy of Christian Lawson-Perfect checkmyworking.com.</p>
+		
 	</div>
 
 
